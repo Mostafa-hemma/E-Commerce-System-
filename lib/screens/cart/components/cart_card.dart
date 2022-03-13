@@ -16,6 +16,7 @@ class CartCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
+        //size box of image
         SizedBox(
           width: 88,
           child: AspectRatio(
@@ -26,7 +27,7 @@ class CartCard extends StatelessWidget {
                 color: Color(0xFFF5F6F9),
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: Image.asset(cart.product.images[0]),
+              // child: Image.asset(cart.product.images[0]),
             ),
           ),
         ),
@@ -34,12 +35,14 @@ class CartCard extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            //text of image
             Text(
-              cart.product.title,
+              cart.product.title!,
               style: TextStyle(color: Colors.black, fontSize: 16),
               maxLines: 2,
             ),
             SizedBox(height: 10),
+            //sub texxt of image
             Text.rich(
               TextSpan(
                 text: "\$${cart.product.price}",

@@ -80,7 +80,7 @@ class CheckoutCard extends StatelessWidget {
                   child: DefaultButton(
                     text: "Check Out",
                     press: () {
-                      Navigator.pushNamed(context, Cheko.routeName);
+                      Navigator.pushNamed(context, CheckOut.routeName);
                     },
                   ),
                 ),

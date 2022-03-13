@@ -25,9 +25,14 @@ const defaultDuration = Duration(milliseconds: 250);
 // Form Error
 final RegExp emailValidatorRegExp =
     RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
+final RegExp mobileValidatorRegExp =
+    RegExp(r'/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/');
 const String kEmailNullError = "Please Enter your email";
-const String kInvalidEmailError = "Please Enter Valid Email";
+const String kMobileNullError = "Please Enter your mobile";
 const String kPassNullError = "Please Enter your password";
+const String kaddressNullError = "Please Enter your Address";
+const String kInvalidEmailError = "Please Enter Valid Email";
+const String kInvalidMobileError = "Please Enter Valid Mobile";
 const String kShortPassError = "Password is too short";
 const String kMatchPassError = "Passwords don't match";
 const String kNamelNullError = "Please Enter your name";

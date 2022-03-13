@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:shop_app/screens/home/home_screen.dart';
 import 'package:shop_app/size_config.dart';
 
 import '../../../components/default_button.dart';
@@ -50,12 +52,12 @@ class Placeorder extends StatelessWidget {
                   child: SvgPicture.asset("assets/icons/receipt.svg"),
                 ),
                 Spacer(),
-                Text("Add voucher code"),
+                Text("Thuanks For Using Us"),
                 const SizedBox(width: 10),
                 Icon(
-                  Icons.arrow_forward_ios,
-                  size: 12,
-                  color: kTextColor,
+                  Icons.shopping_bag_rounded,
+                  size: 15,
+                  color: Colors.orangeAccent[400],
                 )
               ],
             ),
@@ -77,8 +79,11 @@ class Placeorder extends StatelessWidget {
                 SizedBox(
                   width: getProportionateScreenWidth(190),
                   child: DefaultButton(
-                    text: "Check Out",
-                    press: () {},
+                    text: "Confirm Purchase",
+                    press: () {
+                      Fluttertoast.showToast(msg: "Your Order Is Recieved");
+                      Navigator.pushNamed(context, HomeScreen.routeName);
+                    },
                   ),
                 ),
               ],

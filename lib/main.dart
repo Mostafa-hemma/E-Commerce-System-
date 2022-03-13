@@ -7,7 +7,14 @@ import 'package:shop_app/theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+      // options: FirebaseOptions(
+      //   apiKey: "AIzaSyAn7yOZmh6Fhkj6Cgi0Fc51j6UazTVYLz8",
+      //   appId: "1:157058424322:web:b550dad8050b020ecb911b",
+      //   messagingSenderId: "157058424322",
+      //   projectId: "raji-eab0a",
+      // ),
+      );
   runApp(MyApp());
 }
 

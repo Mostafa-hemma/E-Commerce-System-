@@ -33,6 +33,7 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -100,5 +101,29 @@
       loadMainDartJs();
     }
   </script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<script >
+  // Import the functions you need from the SDKs you need
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyAn7yOZmh6Fhkj6Cgi0Fc51j6UazTVYLz8",
+    authDomain: "raji-eab0a.firebaseapp.com",
+    projectId: "raji-eab0a",
+    storageBucket: "raji-eab0a.appspot.com",
+    messagingSenderId: "157058424322",
+    appId: "1:157058424322:web:b550dad8050b020ecb911b"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig)
+
+</script>
+
+
 </body>
 </html>

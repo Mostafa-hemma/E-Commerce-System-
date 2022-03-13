@@ -3,7 +3,7 @@ import 'package:shop_app/models/Cart.dart';
 import 'components/Placeorder.dart';
 import 'components/body.dart';
 
-class Cheko extends StatelessWidget {
+class CheckOut extends StatelessWidget {
   static String routeName = "/checkout";
   @override
   Widget build(BuildContext context) {
@@ -22,10 +22,10 @@ class Cheko extends StatelessWidget {
             "Checkout",
             style: TextStyle(color: Colors.black),
           ),
-          Text(
+          /*Text(
             "${demoCarts.length} items",
             style: Theme.of(context).textTheme.caption,
-          ),
+          ),*/
         ],
       ),
     );
